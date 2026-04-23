@@ -4,7 +4,7 @@ import { Mail, Github, Linkedin, ArrowUpRight } from 'lucide-react/dist/esm/luci
 
 const Contact = () => {
   const socialLinks = [
-    { name: "Email", icon: <Mail size={20} />, href: "mailto:siddhant.saxena.2004@gmail.com", label: "siddhant.saxena.2004@gmail.com" },
+    { name: "Email", icon: <Mail size={20} />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=siddhant.saxena.2004@gmail.com", label: "siddhant.saxena.2004@gmail.com" },
     { name: "GitHub", icon: <Github size={20} />, href: "https://github.com/siddhantsaxena45", label: "github.com/siddhantsaxena45" },
     { name: "LinkedIn", icon: <Linkedin size={20} />, href: "https://linkedin.com/in/siddhant-saxena-617286271", label: "linkedin.com/in/siddhant-saxena" }
   ];
@@ -25,7 +25,9 @@ const Contact = () => {
             <span className="text-accent">together</span>.
           </h2>
           <a
-            href="mailto:siddhant.saxena.2004@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=siddhant.saxena.2004@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl md:text-4xl font-display font-bold text-muted hover:text-white transition-colors border-b border-white/10 pb-2 inline-flex items-center gap-4 group"
           >
             siddhant.saxena.2004@gmail.com
