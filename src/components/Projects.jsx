@@ -47,7 +47,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="group py-12 border-b border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-8 hover:bg-white/[0.01] transition-colors px-4"
+              className="group py-12 border-b border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-8 hover:bg-white/1 transition-colors px-4"
             >
               <div className="max-w-xl">
                 <div className="flex gap-4 mb-4">

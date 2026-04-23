@@ -27,7 +27,7 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08];
+    @apply bg-white/3 backdrop-blur-xl border border-white/8;
   }
   
   .mesh-gradient {
@@ -39,7 +39,7 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white/90 to-white/60;
+    @apply bg-clip-text text-transparent bg-linear-to-br from-white via-white/90 to-white/60;
   }
 
   .animate-spin-slow {

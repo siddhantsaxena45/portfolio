@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'py-4' : 'py-8'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-100 transition-all duration-500 ${scrolled ? 'py-4' : 'py-8'}`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className={`glass rounded-full px-8 py-3 flex justify-between items-center transition-all duration-500 ${scrolled ? 'shadow-2xl shadow-black/50' : 'bg-transparent border-transparent'}`}>
           <motion.div 
@@ -59,7 +59,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed inset-x-6 top-24 z-[99] md:hidden"
+            className="fixed inset-x-6 top-24 z-99 md:hidden"
           >
             <div className="glass rounded-3xl p-6 shadow-2xl">
               <div className="flex flex-col gap-4">
