@@ -1,16 +1,40 @@
-# React + Vite
+# Siddhant Saxena - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal, and recruiter-friendly static personal portfolio website built with React, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+Check out the live site here: [https://portfolio-phi-three-wtlpzutle5.vercel.app/](https://portfolio-phi-three-wtlpzutle5.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology Stack
+- **Framework**: React (Vite)
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
 
-## React Compiler
+## 📄 Sections
+- **Hero**: Personal introduction and primary CTAs.
+- **About**: Summary of background and core statistics.
+- **Skills**: Categorized technical expertise.
+- **Projects**: Showcase of real-world engineering work.
+- **Experience**: Professional journey and research internships.
+- **Achievements**: LeetCode progress, YouTube content, and certifications.
+- **Contact**: Direct communication links.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Local Development
 
-## Expanding the ESLint configuration
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Built with precision by Siddhant Saxena.
