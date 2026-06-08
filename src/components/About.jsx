@@ -36,7 +36,7 @@ const About = () => {
             <div className="absolute inset-0 bg-accent/10 blur-[80px] -z-10" />
             <div className="grid grid-cols-2 gap-12 p-8">
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">
-                <h4 className="text-4xl font-display font-bold text-white mb-1">9.09</h4>
+                <h4 className="text-4xl font-display font-bold text-white mb-1">9.00</h4>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold">Current CGPA</p>
               </div>
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">

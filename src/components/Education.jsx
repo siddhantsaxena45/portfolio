@@ -17,11 +17,11 @@ const Education = () => {
               <h3 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 leading-tight">Jaypee Institute of <br /> Information Technology</h3>
               <p className="text-2xl text-muted font-medium">B.Tech in Computer Science and Engineering</p>
             </div>
-            
+
             <div className="flex flex-col gap-8 text-left border-l border-white/5 pl-8 md:pl-12">
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold mb-1">Current CGPA</p>
-                <p className="text-4xl font-display font-bold text-accent">9.09</p>
+                <p className="text-4xl font-display font-bold text-accent">9.00</p>
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold mb-1">Graduation</p>
