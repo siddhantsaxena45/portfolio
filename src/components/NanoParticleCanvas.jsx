@@ -84,7 +84,7 @@ const NanoParticleCanvas = ({ onAssembleComplete }) => {
               originY: y,
               color: `rgba(${r},${g},${b}, 1)`,
               size: step - 2,
-              ease: Math.random() * 0.05 + 0.015
+              ease: Math.random() * 0.15 + 0.05
             });
           }
         }
@@ -129,7 +129,7 @@ const NanoParticleCanvas = ({ onAssembleComplete }) => {
         assembled = true;
         setTimeout(() => {
           if(onAssembleComplete) onAssembleComplete();
-        }, 1500); // Wait 1.5 second after assembly to trigger next phase
+        }, 400); // Wait 0.4 second after assembly to trigger next phase
       }
       
       animationFrameId = requestAnimationFrame(animate);
