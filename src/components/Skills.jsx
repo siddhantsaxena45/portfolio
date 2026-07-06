@@ -4,11 +4,12 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   const skillCategories = [
     { title: "Languages", skills: ["C++", "Python", "JavaScript", "SQL"] },
-    { title: "Backend", skills: ["Node.js", "Express.js", "FastAPI"] },
-    { title: "Frontend", skills: ["React.js", "Tailwind CSS"] },
-    { title: "Databases", skills: ["MongoDB", "PostgreSQL"] },
-    { title: "Core", skills: ["DSA", "DBMS", "OS", "OOP"] },
-    { title: "Tools", skills: ["Git", "GitHub", "Postman"] }
+    { title: "Backend", skills: ["Node.js", "Express.js", "FastAPI", "RESTful APIs", "Socket.io"] },
+    { title: "Frontend", skills: ["React", "Vite", "Tailwind CSS", "Redux Toolkit"] },
+    { title: "Databases", skills: ["MongoDB", "PostgreSQL", "Pinecone"] },
+    { title: "Generative AI", skills: ["LangChain", "CrewAI", "Gemini API", "Ollama", "Whisper", "TensorFlow.js", "RAG"] },
+    { title: "Tools", skills: ["Git", "GitHub", "Postman", "VS Code", "Cloudinary"] },
+    { title: "Core CS", skills: ["Data Structures & Algorithms", "OOP", "Operating Systems", "DBMS", "Computer Networks"] }
   ];
 
   return (
@@ -41,7 +42,7 @@ const Skills = () => {
                 {category.skills.map((skill, sIdx) => (
                   <span 
                     key={sIdx}
-                    className="text-lg font-display font-medium text-muted hover:text-white transition-colors cursor-default"
+                    className="px-4 py-2 text-sm font-display font-medium text-accent border border-accent/20 bg-accent/5 hover:bg-accent hover:text-black hover:shadow-[0_0_15px_rgba(0,240,255,0.5)] transition-all cursor-default uppercase tracking-wider"
                   >
                     {skill}
                   </span>
