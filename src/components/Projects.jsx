@@ -31,7 +31,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-32 px-6">
+    <section id="projects" className="py-16 md:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ const Projects = () => {
           className="mb-20"
         >
           <h2 className="text-sm uppercase tracking-[0.4em] text-accent font-bold mb-4">Portfolio</h2>
-          <h3 className="text-5xl font-display font-bold">Selected Work</h3>
+          <h3 className="text-4xl md:text-5xl font-display font-bold">Selected Work</h3>
         </motion.div>
         
         <div className="space-y-0">
@@ -50,7 +50,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="group py-12 border border-[#00f0ff]/10 bg-[#00f0ff]/5 mb-8 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-8 hover:bg-[#00f0ff]/10 hover:border-[#00f0ff]/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] transition-all duration-500 px-8 relative overflow-hidden"
+              className="group py-8 md:py-12 border border-[#00f0ff]/10 bg-[#00f0ff]/5 mb-8 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-8 hover:bg-[#00f0ff]/10 hover:border-[#00f0ff]/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] transition-all duration-500 px-6 md:px-8 relative overflow-hidden"
             >
               {/* Decorative HUD corners */}
               <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#00f0ff]/50" />
@@ -58,15 +58,15 @@ const Projects = () => {
               <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#00f0ff]/50" />
               <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#00f0ff]/50" />
               <div className="max-w-xl">
-                <div className="flex gap-4 mb-4">
+                <div className="flex flex-wrap gap-3 mb-4">
                   {project.tech.map((t, i) => (
                     <span key={i} className="text-[10px] uppercase tracking-widest font-bold text-accent">
                       {t}
                     </span>
                   ))}
                 </div>
-                <h3 className="text-4xl font-display font-bold text-white mb-2 group-hover:translate-x-2 transition-transform duration-500">{project.title}</h3>
-                <p className="text-muted text-lg">{project.description}</p>
+                <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-2 group-hover:translate-x-2 transition-transform duration-500">{project.title}</h3>
+                <p className="text-muted text-base md:text-lg">{project.description}</p>
               </div>
               
               <div className="flex items-center gap-6">

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="py-32 px-6 relative overflow-hidden">
+    <section id="about" className="py-16 md:py-32 px-4 sm:px-6 relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
@@ -13,7 +13,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-sm uppercase tracking-[0.4em] text-accent font-bold mb-6">Discovery</h2>
-            <h3 className="text-5xl md:text-6xl font-display font-bold mb-10 leading-tight">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 md:mb-10 leading-tight">
               Bridging the gap between <span className="text-muted">logic</span> and <span className="text-white">experience</span>.
             </h3>
             <div className="space-y-6 text-lg text-muted leading-relaxed font-sans">
@@ -34,21 +34,21 @@ const About = () => {
             className="relative"
           >
             <div className="absolute inset-0 bg-accent/10 blur-[80px] -z-10" />
-            <div className="grid grid-cols-2 gap-12 p-8">
+            <div className="grid grid-cols-2 gap-6 md:gap-12 p-4 md:p-8">
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">
-                <h4 className="text-4xl font-display font-bold text-white mb-1">9.00</h4>
+                <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-1">9.00</h4>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold">Current CGPA</p>
               </div>
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">
-                <h4 className="text-4xl font-display font-bold text-white mb-1">300+</h4>
+                <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-1">300+</h4>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold">DSA Solved</p>
               </div>
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">
-                <h4 className="text-4xl font-display font-bold text-white mb-1">2027</h4>
+                <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-1">2027</h4>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold">Graduation</p>
               </div>
               <div className="border-l-2 border-white/5 pl-6 hover:border-accent transition-colors">
-                <h4 className="text-4xl font-display font-bold text-white mb-1">3+</h4>
+                <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-1">3+</h4>
                 <p className="text-[10px] uppercase tracking-widest text-muted font-bold">Core Projects</p>
               </div>
             </div>

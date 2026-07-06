@@ -6,7 +6,7 @@ const Hero = () => {
   const [helmetOpen, setHelmetOpen] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-16 md:pb-20 px-4 sm:px-6 overflow-hidden">
       {/* Mesh Background */}
       <div className="absolute inset-0 mesh-gradient opacity-30 -z-10" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 blur-[120px] rounded-full -z-10 animate-pulse" />
@@ -19,7 +19,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="lg:col-span-7 text-left order-2 lg:order-1"
+            className="lg:col-span-7 text-center lg:text-left order-2 lg:order-1"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-none border border-accent bg-accent/10 mb-8 text-[10px] uppercase tracking-[0.3em] font-bold text-accent shadow-[0_0_10px_rgba(0,240,255,0.2)]">
               <span className="relative flex h-2 w-2">
@@ -29,17 +29,17 @@ const Hero = () => {
               SYSTEM.ONLINE // FULL STACK ENGINEER
             </div>
 
-            <h1 className="text-5xl md:text-8xl font-display font-extrabold tracking-tight mb-8 leading-[1.1]">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-display font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1]">
               <span className="text-gradient">Siddhant</span> <br />
               <span className="text-white">Saxena</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted mb-12 max-w-2xl leading-relaxed font-sans">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted mb-10 md:mb-12 max-w-2xl leading-relaxed font-sans mx-auto lg:mx-0">
               Computer Science student building <span className="text-white font-medium">high-performance systems</span> and 
               scalable full-stack applications with a focus on backend efficiency.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
               <motion.a
                 href="#projects"
                 whileHover={{ scale: 1.05, textShadow: "0 0 8px rgb(0,240,255)" }}
@@ -49,7 +49,7 @@ const Hero = () => {
                 Access Databanks <ArrowRight size={20} />
               </motion.a>
               
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap justify-center items-center gap-4">
                 <motion.a
                   href="https://github.com/siddhantsaxena45"
                   target="_blank"
@@ -101,7 +101,7 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full -z-10" />
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-2 border-accent/30 relative flex items-center justify-center p-4 shadow-[0_0_30px_rgba(0,240,255,0.15)]">
+              <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-2 border-accent/30 relative flex items-center justify-center p-4 shadow-[0_0_30px_rgba(0,240,255,0.15)]">
                 {/* Rotating outer rings */}
                 <div className="absolute inset-0 rounded-full border-t-2 border-r-2 border-accent/60 animate-spin-slow" />
                 <div className="absolute inset-[-10px] rounded-full border-b-2 border-l-2 border-accent/30" style={{animation: 'spin 12s linear infinite reverse'}} />
@@ -191,7 +191,7 @@ const Hero = () => {
               </div>
               
               {/* Toggle Button */}
-              <div className="absolute -bottom-16 left-1/2 -translate-x-1/2">
+              <div className="absolute -bottom-12 md:-bottom-16 left-1/2 -translate-x-1/2 z-50">
                 <button
                   onClick={() => setHelmetOpen(!helmetOpen)}
                   className="px-6 py-2 bg-accent/10 text-accent border border-accent/50 uppercase tracking-[0.3em] font-bold text-[10px] hover:bg-accent hover:text-black hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all cursor-pointer whitespace-nowrap"

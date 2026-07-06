@@ -13,7 +13,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-32 px-6">
+    <section id="skills" className="py-16 md:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,10 +22,10 @@ const Skills = () => {
           className="mb-20"
         >
           <h2 className="text-sm uppercase tracking-[0.4em] text-accent font-bold mb-4">Stack</h2>
-          <h3 className="text-5xl font-display font-bold">Tech Toolbox</h3>
+          <h3 className="text-4xl md:text-5xl font-display font-bold">Tech Toolbox</h3>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
           {skillCategories.map((category, idx) => (
             <motion.div 
               key={idx}

@@ -31,7 +31,7 @@ const Achievements = () => {
   ];
 
   return (
-    <section id="achievements" className="py-32 px-6">
+    <section id="achievements" className="py-16 md:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,10 +40,10 @@ const Achievements = () => {
           className="mb-20"
         >
           <h2 className="text-sm uppercase tracking-[0.4em] text-accent font-bold mb-4">Milestones</h2>
-          <h3 className="text-5xl font-display font-bold">Awards</h3>
+          <h3 className="text-4xl md:text-5xl font-display font-bold">Awards</h3>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
           {items.map((item, idx) => (
             <motion.a 
               key={idx}
@@ -53,7 +53,7 @@ const Achievements = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="group border border-[#00f0ff]/10 bg-[#00f0ff]/5 p-8 flex flex-col items-start hover:border-[#00f0ff]/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] hover:bg-[#00f0ff]/10 transition-all relative overflow-hidden"
+              className="group border border-[#00f0ff]/10 bg-[#00f0ff]/5 p-6 md:p-8 flex flex-col items-start hover:border-[#00f0ff]/50 hover:shadow-[0_0_30px_rgba(0,240,255,0.2)] hover:bg-[#00f0ff]/10 transition-all relative overflow-hidden"
             >
               {/* Decorative HUD corners */}
               <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#00f0ff]/50" />
@@ -61,10 +61,10 @@ const Achievements = () => {
               <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-accent mb-4">
                 {item.tag}
               </span>
-              <h3 className="text-2xl font-display font-bold text-white mb-4 flex items-center gap-2 group-hover:text-accent transition-colors">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-white mb-4 flex items-center gap-2 group-hover:text-accent transition-colors">
                 {item.title} {item.link !== "#" && <ExternalLink size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />}
               </h3>
-              <p className="text-muted text-lg leading-relaxed">
+              <p className="text-muted text-base md:text-lg leading-relaxed">
                 {item.desc}
               </p>
             </motion.a>

@@ -12,7 +12,7 @@ const Contact = () => {
   ];
 
   return (
-    <footer id="contact" className="py-32 px-6 relative overflow-hidden bg-black">
+    <footer id="contact" className="py-16 md:py-32 px-4 sm:px-6 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-accent/20 to-transparent" />
 
       <div className="max-w-6xl mx-auto text-center">
@@ -20,16 +20,16 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-32"
+          className="mb-16 md:mb-32"
         >
-          <h2 className="text-5xl md:text-8xl font-display font-extrabold tracking-tight mb-10 text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-8xl font-display font-extrabold tracking-tight mb-8 md:mb-10 text-white">
             Let's build <br />
             <span className="text-accent">together</span>.
           </h2>
 
         </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-x-16 gap-y-8 mb-32">
+        <div className="flex flex-wrap justify-center gap-x-8 sm:gap-x-16 gap-y-6 md:gap-y-8">
           {socialLinks.map((link, idx) => (
             <a
               key={idx}

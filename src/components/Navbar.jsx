@@ -24,8 +24,8 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-100 transition-all duration-500 ${scrolled ? 'py-4' : 'py-8'}`}>
-      <div className="max-w-7xl mx-auto px-6">
-        <div className={`glass rounded-full px-8 py-3 flex justify-between items-center transition-all duration-500 ${scrolled ? 'shadow-2xl shadow-black/50' : 'bg-transparent border-transparent'}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className={`glass rounded-full px-6 md:px-8 py-3 flex justify-between items-center transition-all duration-500 ${scrolled ? 'shadow-2xl shadow-black/50' : 'bg-transparent border-transparent'}`}>
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
