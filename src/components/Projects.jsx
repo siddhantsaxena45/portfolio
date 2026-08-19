@@ -7,10 +7,10 @@ const Projects = () => {
     {
       title: "AI-Proctor",
       subtitle: "AI-Powered Technical Interview Platform",
-      description: "Built a full-stack AI mock interview platform supporting coding, conceptual, and voice interviews. Integrated Whisper and Ollama for real-time speech transcripts and feedback. Includes in-browser Monaco editor and browser-based AI proctoring via TensorFlow.js.",
+      description: "Built a full-stack AI mock interview platform supporting coding, conceptual, and voice interviews. Integrated gemini api for real-time speech transcripts and feedback. Includes in-browser Monaco editor and browser-based AI proctoring via TensorFlow.js.",
       github: "https://github.com/siddhantsaxena45/AI-Proctor",
       live: null,
-      tech: ["React", "Node.js", "FastAPI", "MongoDB", "TensorFlow.js"]
+      tech: ["React", "Node.js" ,"Express.js" ,"FastAPI", "MongoDB" , "Gemini API"]
     },
     {
       title: "Zocial",
