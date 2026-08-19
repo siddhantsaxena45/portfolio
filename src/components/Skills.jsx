@@ -6,7 +6,7 @@ const Skills = () => {
     { title: "Languages", skills: ["C++", "Python", "JavaScript", "SQL"] },
     { title: "Backend", skills: ["Node.js", "Express.js", "FastAPI"] },
     { title: "Frontend", skills: ["React", "Tailwind CSS", "Redux Toolkit"] },
-    { title: "Databases", skills: ["MongoDB", "PostgreSQL"] },
+    { title: "Databases", skills: ["MongoDB", "PostgreSQL", "Pinecone"] },
     { title: "Generative AI", skills: ["LangChain", "CrewAI"] },
     { title: "Tools", skills: ["Git", "GitHub", "Postman", "VS Code"] },
     { title: "Core CS", skills: ["Data Structures & Algorithms", "OOP", "Operating Systems", "DBMS", "Computer Networks"] }
