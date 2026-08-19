@@ -9,8 +9,8 @@ const Projects = () => {
       subtitle: "AI-Powered Technical Interview Platform",
       description: "Built a full-stack AI mock interview platform supporting coding, conceptual, and voice interviews. Integrated gemini api for real-time speech transcripts and feedback. Includes in-browser Monaco editor and browser-based AI proctoring via TensorFlow.js.",
       github: "https://github.com/siddhantsaxena45/AI-Proctor",
-      live: null,
-      tech: ["React", "Node.js" ,"Express.js" ,"FastAPI", "MongoDB" , "Gemini API"]
+      live: "https://ai-interviewer-phi-ten.vercel.app/",
+      tech: ["MERN","FastAPI", "Gemini" ,"TensorFlow.js", "Monaco","Socket.io"]
     },
     {
       title: "Zocial",
@@ -26,7 +26,7 @@ const Projects = () => {
       description: "RAG-based document intelligence platform using React, FastAPI, PostgreSQL, Pinecone, and CrewAI. Built AI agents for resume analysis and research assistance. Implemented semantic search and vector embeddings.",
       github: "https://github.com/siddhantsaxena45/DocMind",
       live: "https://doc-mind-eight.vercel.app",
-      tech: ["React", "FastAPI", "Pinecone", "LangChain", "CrewAI"]
+      tech: ["React", "FastAPI", "Pinecone","Supabase" , "LangChain", "CrewAI"]
     }
   ];
 
