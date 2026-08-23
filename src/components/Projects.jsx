@@ -5,10 +5,10 @@ import { Github, ArrowUpRight, Globe } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Proctor",
+      title: "Lumina",
       subtitle: "AI-Powered Technical Interview Platform",
       description: "Built a full-stack AI mock interview platform supporting coding, conceptual, and voice interviews. Integrated gemini api for real-time speech transcripts and feedback. Includes in-browser Monaco editor and browser-based AI proctoring via TensorFlow.js.",
-      github: "https://github.com/siddhantsaxena45/AI-Proctor",
+      github: "https://github.com/siddhantsaxena45/Lumina",
       live: "https://ai-interviewer-phi-ten.vercel.app/",
       tech: ["MERN","FastAPI", "Gemini" ,"TensorFlow.js", "Monaco","Socket.io"]
     },
