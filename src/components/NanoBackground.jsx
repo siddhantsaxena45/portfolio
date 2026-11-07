@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const NanoBackground = () => {
   const canvasRef = useRef(null);
@@ -89,7 +89,6 @@ const NanoBackground = () => {
     };
 
     const connectParticles = () => {
-      let opacityValue = 1;
       for (let a = 0; a < particles.length; a++) {
         for (let b = a; b < particles.length; b++) {
           let dx = particles[a].x - particles[b].x;
@@ -97,7 +96,7 @@ const NanoBackground = () => {
           let distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 120) {
-            opacityValue = 1 - (distance / 120);
+            const opacityValue = 1 - (distance / 120);
             ctx.strokeStyle = `rgba(0, 240, 255, ${opacityValue * 0.4})`; // Cyan lines
             ctx.lineWidth = 1;
             ctx.beginPath();

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const NanoParticleCanvas = ({ onAssembleComplete }) => {
   const canvasRef = useRef(null);

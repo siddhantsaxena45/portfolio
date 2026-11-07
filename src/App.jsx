@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,7 +12,7 @@ import IronManPreloader from './components/IronManPreloader';
 import NanoBackground from './components/NanoBackground';
 
 function App() {
-  const [preloading, setPreloading] = React.useState(true);
+  const [preloading, setPreloading] = useState(true);
 
   return (
     <div className={`min-h-screen text-foreground font-sans selection:bg-accent selection:text-white ${preloading ? 'overflow-hidden h-screen' : 'overflow-x-hidden'}`}>
