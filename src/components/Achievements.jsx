@@ -35,7 +35,7 @@ const Achievements = () => {
     },
     {
       title: "SidCode.AI Founder & Technical Creator",
-      desc: "Built and launched SidCode.AI educational platform and YouTube channel, growing to 700+ subscribers, 20K+ views, and publishing 35+ technical videos on Full-Stack & AI.",
+      desc: "Built and launched SidCode.AI educational platform and YouTube channel, growing to 800+ subscribers, 50K+ views, and publishing 35+ technical videos on Full-Stack & AI.",
       link: "https://sidcode-ai.vercel.app/",
       tag: "Platform / YouTube"
     },
